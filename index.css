@@ -1,0 +1,142 @@
+:root {font-size: 16px; box-sizing: border-box;}
+*, *::after, *::before {margin: 0; padding: 0; box-sizing: inherit; transition: all 250ms ease;}
+
+/* header */
+header {display: flex; justify-content: space-between; align-items: center; height: 5em; padding: .5em 1em;}
+.link {text-decoration: none; padding: .5em 1em; margin: 0 .5em 0 0; color: rgb(26, 171, 171); font-weight: bold;}
+.link--logo {display: flex; align-items: center;} .brand {font-size: 1.5em; margin: 0 0 0 .5em;}
+.link--logo img {width: 2em;}
+.link--nav {opacity: .6;} .link--nav:hover {opacity: 1;}
+.join {display: flex; align-items: center;}
+.join--smallScreen {display: none;}
+.link--pro {border: .1em solid;} .link--logIn {border: .1em solid rgb(26, 171, 171); background-color: rgb(26, 171, 171); color: white;}
+.link--pro:hover {color: gray;} .link--logIn:hover {background-color: lightslategray; border-color: lightslategray;}
+.switchContainer {height: 1.5em; width: 2em; border: .2em solid lightblue; background-color: lightblue; cursor: pointer; display: flex;}
+.switch {height: 100%; width: 50%; background-color: black;}
+.menu {font-size: 1.5em; margin: 0 .5em 0 0; background: transparent; border: none; color: transparent; position: fixed;} #viewMenu {rotate: 90deg;}
+
+/* heroSection */
+.heroSection {display: flex; justify-content: space-between; gap: 3em; background-color: rgb(26, 171, 171); padding: 5em 7em;}
+.hero, .hform {width: 100%;}
+.htxt {display: block;}
+.htxt--subtitle {color: black; font-weight: bold; margin: 0 0 1em 0;}
+.htxt--title {font-size: 3.5em; color: white;}
+.htxt--description {color: darkslategray; margin: 2em 0 0 0;}
+.hform {display: flex; flex-direction: column; gap: .5em; align-self: flex-end;}
+.data {display: flex; gap: .3em;}
+.i {display: block; width: 100%; font-size: 1em; padding: 0.5em 1em; border: none; border-radius: .3em;}
+.isubmit {font-size: 1.1em; padding: .5em; border-radius: .3em; border: none; background-color: rgb(70,70,70); color: white; font-weight: bold; cursor: pointer;}
+.isubmit:hover {background-color: black;}
+
+/* cardCreation */
+.iimg, .icolor {position: absolute; scale: 0;}
+.contain-img {width: 7em; border: .5em solid; border-radius: 50%; cursor: pointer; margin: 0 0 2em;}
+.cardContainer {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 5em;
+}
+.card {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    min-width: 15em; font-size: 1.1em; font-weight: bold; gap: .5em; background-color: skyblue; padding: 1em; border-radius: .5em;
+}
+.cardLabel {opacity: .5;}
+.pData {
+    display: flex; justify-content: space-between; width: 100%; gap: 2.5em;
+}
+.cardDesign {
+    display: flex; justify-content: center; align-items: center; padding: 1em; gap: .5em;
+}
+.colorCh {
+    font-size: .8em; padding: .5em 1em; width: 6rem; font-weight: bold; cursor: pointer; text-align: center; color: white; border-radius: .5em;
+}
+.colorCh--text {background: rgb(26, 171, 171)}
+.colorCh--bg {background: rgb(184, 38, 184)}
+
+/* about */
+.about {
+    display: flex; padding: 3em 5em; background-color: rgb(26, 171, 171); gap: 3em;
+}
+.abSec {display: flex; flex-direction: column; gap: 1.5em;}
+.abtxt {display: block; text-align: center;}
+.abtxt--title {font-size: 1.5em; font-weight: bold; color: white;}
+.abtxt--description {color: white; opacity: .7;}
+
+/*
+<section class="about" id="about">
+    <div class="abSec abSec--lorem">
+        <span class="abtxt abtxt--title">Lorem</span>
+        <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias in libero nisi perspiciatis impedit autem odio enim veritatis eaque, quae deleniti praesentium, laboriosam id voluptate neque necessitatibus natus illum.</span>
+    </div>
+    <div class="abSec abSec--ipsum">
+        <span class="abtxt abtxt--title">Ipsum</span>
+        <span class="abtxt abtxt--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat provident, dolorem quia ab minus quisquam molestiae, labore voluptates sunt consequuntur hic dolor voluptas, ad maiores inventore deleniti alias vero. Dolores!</span>
+    </div>
+    <div class="abSec abSec--dolor">
+        <span class="abtxt abtxt--title">Dolor</span>
+        <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, iste quidem totam consequatur omnis ipsa. Sed suscipit, minus, omnis commodi quidem ullam, consequatur expedita odio assumenda tempore iure voluptas temporibus.</span>
+    </div>
+</section>
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1024px) {
+    :root {font-size: 14px;}
+    .htxt--title {font-size: 2.5em;}
+    .i, .isubmit {font-size: .9em;}
+}
+
+@media(max-width: 768px) {
+    /* header */
+    :root {font-size: 13px;}
+    .join .link {font-size: .8em;}
+    .switchContainer {height: 2em; width: 1.5em;}
+
+    /* heroSection */
+    .heroSection {padding: 5em 2em;}
+}
+
+@media(max-width: 426px) {
+    :root {font-size: 11.5px;}
+
+    /* header */
+    .link--logo img {width: 2em; width: 2em;}
+    .brand {font-size: 1.3em;}
+    .join .link {display: none;}
+    .join--smallScreen {display: block; margin: 0 0 2em 0; font-size: .8em;}
+    .nav {position: fixed; top: 5em; right: -100%;  width: 100%; height: 100vh; display: flex; flex-direction: column-reverse; align-items: center; justify-content: flex-end; gap: .5em; padding: 3em 0 0 0; background-color: white;}
+    .menu {position: static; color: rgb(26, 171, 171); cursor: pointer; width: 1em;}
+    #hideMenu {display: none;}
+    .switchContainer {height: 1em; width: 2em; margin: .5em;}
+
+    /* heroSection */
+    .heroSection {flex-direction: column; padding: 5em 4em; gap: 6em;}
+
+    /* cardContainer */
+    .card {font-size: .8em;}
+    .contain-img {width: 5em;}
+    .colorCh {font-size: .6em; width: 4.5rem;}
+
+    /* about */
+    .about {
+        flex-direction: column; gap: 4em;
+    }
+    .abSec {gap: 1em;}
+
+
+}
+
+@media(max-width: 375px) {
+    :root {font-size: 10px;}
+}

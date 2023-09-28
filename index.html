@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carder.io</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon-logo.png" type="image/x-icon">
+    <script src="index.js" defer></script>
+</head>
+<body id="page">
+    <!-- header -->
+    <header>
+        <a href="" class="link link--logo">
+            <img src="favicon-logo.png" alt=""> <span class="brand">Carder.io</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="" class="link link--nav">Home</a>
+            <a href="" class="link link--nav">Community</a>
+            <a href="" class="link link--nav">Pricing</a>
+            <a href="" class="link link--nav">Contact</a>
+            <span class="join--smallScreen">
+                <a href="" class="link link--pro">Try Pro</a>
+                <a href="" class="link link--logIn">Log In</a>
+            </span>
+        </nav>
+        <span class="join">
+            <a href="" class="link link--pro">Try Pro</a>
+            <a href="" class="link link--logIn">Log In</a>
+            <button class="switchContainer" id="switchContainer" onclick="changeMode()">
+                <div class="switch" id="switch"></div>
+            </button>
+            <button class="menu" id="viewMenu" onclick="viewM()">|||</button>
+            <button class="menu" id="hideMenu" onclick="hideM()">X</button>
+        </span>
+    </header>
+
+    <!-- heroSection -->
+    <section class="heroSection" id="heroSection">
+        <section class="hero" id="hero">
+            <span class="htxt htxt--subtitle">Claim your personalized card for free !!!</span>
+            <span class="htxt htxt--title">Build your professional <br>recognition in a <br>unique way</span>
+            <span class="htxt htxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dicta dolorum rerum? Nesciunt, est debitis cupiditate molestiae nisi expedita quasi vitae voluptas, temporibus qui maiores quaerat, cumque animi ab eveniet.</span>
+        </section>
+        <form action="" class="hform" id="hform">
+            <span class="data data--name">
+                <input type="text" name="fname" class="i ifname" id="ifname" placeholder="First Name">
+                <input type="text" name="lname" class="i ilname" id="ilname" placeholder="Last Name">
+            </span>
+            <span class="data data--id">
+                <input type="text" name="batch" class="i ibatch" id="ibatch" placeholder="Batch">
+                <input type="text" name="midCode" class="i imidCode" id="imidCode" placeholder="Mid Code">
+                <input type="text" name="lastCode" class="i ilastCode" id="ilastCode" placeholder="Last Code">
+            </span>
+            <span class="data data--uni">
+                <input type="text" name="dept" class="i idept" id="idept" placeholder="Department">
+                <input type="text" name="uni" class="i iuni" id="iuni" placeholder="University">
+            </span>
+            <input type="email" name="email" class="i iemail" id="iemail" placeholder="Email Address">
+            <input type="submit" class="isubmit" id="isubmit" onclick="createCard()" value="Create Card">
+        </form>
+    </section>
+
+    <!-- cardCreation -->
+    <section class="cardContainer" id="cardContainer">
+        <div class="card" id="card">
+            <input type="file" class="iimg" id="iimg">
+            <label for="iimg" class="iimg--label">
+                <img src="https://i.postimg.cc/ZKS36RC5/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg" alt="" class="contain-img" id="contain-img">
+            </label>
+            <span class="pData pData--name" id="pData--name">
+                <samp class="cardLabel">Name</samp> <samp class="pr pr--name" id="pr--name"></samp>
+            </span>
+            <span class="pData pData--id" id="pData--id">
+                <samp class="cardLabel">Student ID</samp> <samp class="pr pr--id" id="pr--id"></samp>
+            </span>
+            <span class="pData pData--dept" id="pData--dept">
+                <samp class="cardLabel">Department</samp> <samp class="pr pr--dept" id="pr--dept"></samp>
+            </span>
+            <span class="pData pData--uni">
+                <samp class="cardLabel">University</samp> <samp class="pr pr--uni" id="pr--uni"></samp>
+            </span>
+            <span class="pData pData--email">
+                <samp class="cardLabel">Email</samp> <samp class="pr pr--email" id="pr--email"></samp>
+            </span>
+        </div>
+        <div class="cardDesign" id="cardDesign">
+            <input type="color" class="icolor" id="icolortxt">
+            <label for="icolortxt" class="colorCh colorCh--text">Text</label>
+            <input type="color" class="icolor" id="icolorbg">
+            <label for="icolorbg" class="colorCh colorCh--bg">Background</label>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="abSec abSec--lorem">
+            <span class="abtxt abtxt--title">Lorem</span>
+            <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias in libero nisi perspiciatis impedit autem odio enim veritatis eaque, quae deleniti praesentium, laboriosam id voluptate neque necessitatibus natus illum.</span>
+        </div>
+        <div class="abSec abSec--ipsum">
+            <span class="abtxt abtxt--title">Ipsum</span>
+            <span class="abtxt abtxt--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat provident, dolorem quia ab minus quisquam molestiae, labore voluptates sunt consequuntur hic dolor voluptas, ad maiores inventore deleniti alias vero. Dolores!</span>
+        </div>
+        <div class="abSec abSec--dolor">
+            <span class="abtxt abtxt--title">Dolor</span>
+            <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, iste quidem totam consequatur omnis ipsa. Sed suscipit, minus, omnis commodi quidem ullam, consequatur expedita odio assumenda tempore iure voluptas temporibus.</span>
+        </div>
+    </section>
+</body>
+</html>
