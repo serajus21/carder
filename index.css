@@ -6,6 +6,7 @@ header {display: flex; justify-content: space-between; align-items: center; heig
 .link {text-decoration: none; padding: .5em 1em; margin: 0 .5em 0 0; color: rgb(26, 171, 171); font-weight: bold;}
 .link--logo {display: flex; align-items: center;} .brand {font-size: 1.5em; margin: 0 0 0 .5em;}
 .link--logo img {width: 2em;}
+.nav {z-index: 2;}
 .link--nav {opacity: .6;} .link--nav:hover {opacity: 1;}
 .join {display: flex; align-items: center;}
 .join--smallScreen {display: none;}
@@ -39,7 +40,7 @@ header {display: flex; justify-content: space-between; align-items: center; heig
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     min-width: 15em; font-size: 1.1em; font-weight: bold; gap: .5em; background-color: skyblue; padding: 1em; border-radius: .5em;
 }
-.cardLabel {opacity: .5;}
+.cardLabel {opacity: .5; display: block; z-index: 1;}
 .pData {
     display: flex; justify-content: space-between; width: 100%; gap: 2.5em;
 }
