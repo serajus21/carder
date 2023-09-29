@@ -1,9 +1,10 @@
 // light & dark mode
 let x = 0;
+let orderLink = document.getElementById('link--order');
 function changeMode() {
     ++x;
     if(x%2!=0) {
-
+        
         // header
         document.getElementById('page').style.backgroundColor = "rgb(30,30,30)";
         document.getElementById('switchContainer').style.justifyContent = "flex-end";
@@ -17,12 +18,29 @@ function changeMode() {
                 element.style.color = "aqua";
             })
         })
-
+        
         // heroSection
         document.querySelectorAll('.i').forEach((element) => {
             element.style.backgroundColor = "black";
             element.style.color = "white";
         })
+        
+        //order
+
+        orderLink.style.backgroundColor="rgb(30,30,30)";
+        orderLink.style.borderColor="rgb(26, 171, 171)";
+        orderLink.style.color="rgb(26, 171, 171)";
+        orderLink.addEventListener('mouseenter', function() {
+            orderLink.style.backgroundColor="rgb(26, 171, 171)";
+            orderLink.style.borderColor="rgb(26, 171, 171)";
+            orderLink.style.color="white";
+        })
+        orderLink.addEventListener('mouseleave', function() {
+            orderLink.style.backgroundColor="rgb(30,30,30)";
+            orderLink.style.borderColor="rgb(26, 171, 171)";
+            orderLink.style.color="rgb(26, 171, 171)";
+        })
+
     }
     
     if(x%2==0) {
@@ -48,6 +66,21 @@ function changeMode() {
         document.querySelectorAll('.i').forEach((element) => {
             element.style.backgroundColor = "white";
             element.style.color = "black";
+        })
+
+        //order
+        orderLink.style.backgroundColor="white";
+        orderLink.style.borderColor="rgb(26, 171, 171)";
+        orderLink.style.color="rgb(26, 171, 171)";
+        orderLink.addEventListener('mouseenter', function() {
+            orderLink.style.backgroundColor="rgb(26, 171, 171)";
+            orderLink.style.borderColor="rgb(26, 171, 171)";
+            orderLink.style.color="white";
+        })
+        orderLink.addEventListener('mouseleave', function() {
+            orderLink.style.backgroundColor="white";
+            orderLink.style.borderColor="rgb(26, 171, 171)";
+            orderLink.style.color="rgb(26, 171, 171)";
         })
     }
 }

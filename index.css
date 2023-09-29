@@ -30,7 +30,7 @@ header {display: flex; justify-content: space-between; align-items: center; heig
 
 /* cardCreation */
 .iimg, .icolor {position: absolute; scale: 0;}
-.contain-img {width: 7em; border: .5em solid; border-radius: 50%; cursor: pointer; margin: 0 0 2em;}
+.contain-img {width: 7em; height: 7em; border: .5em solid; border-radius: 50%; cursor: pointer; margin: 0 0 2em;}
 .cardContainer {
     display: flex; flex-direction: column; align-items: center;
     padding: 5em;
@@ -61,22 +61,20 @@ header {display: flex; justify-content: space-between; align-items: center; heig
 .abtxt--title {font-size: 1.5em; font-weight: bold; color: white;}
 .abtxt--description {color: white; opacity: .7;}
 
-/*
-<section class="about" id="about">
-    <div class="abSec abSec--lorem">
-        <span class="abtxt abtxt--title">Lorem</span>
-        <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias in libero nisi perspiciatis impedit autem odio enim veritatis eaque, quae deleniti praesentium, laboriosam id voluptate neque necessitatibus natus illum.</span>
-    </div>
-    <div class="abSec abSec--ipsum">
-        <span class="abtxt abtxt--title">Ipsum</span>
-        <span class="abtxt abtxt--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat provident, dolorem quia ab minus quisquam molestiae, labore voluptates sunt consequuntur hic dolor voluptas, ad maiores inventore deleniti alias vero. Dolores!</span>
-    </div>
-    <div class="abSec abSec--dolor">
-        <span class="abtxt abtxt--title">Dolor</span>
-        <span class="abtxt abtxt--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, iste quidem totam consequatur omnis ipsa. Sed suscipit, minus, omnis commodi quidem ullam, consequatur expedita odio assumenda tempore iure voluptas temporibus.</span>
-    </div>
-</section>
-*/
+/* order */
+.order {padding: 5em 7em; text-align: center;}
+.ortxt {display: block;}
+.ortxt--title {font-weight: bold; font-size: 2em; color: rgb(26, 171, 171);}
+.ortxt--description {margin-top: 1em; color: gray;}
+.link--order {border: .2em solid; margin: 2em auto; display: block; width: fit-content; border-radius: .5em;}
+.link--order:hover {background-color: rgb(26, 171, 171); border-color: rgb(26, 171, 171); color: white;}
+
+/* footer */
+.footer {padding: 5em 8em; background-color: rgb(26, 171, 171); display: flex; justify-content: center; gap: 5em;}
+.footer .link {color: white; opacity: .6; display: block; padding: 0; margin: .4em 0;}
+.footer .link--logo {opacity: 1; display: flex; align-self: flex-start;}
+.link--footer:hover {opacity: 1;}
+.fsec--title {font-size: 1.5em; font-weight: bold; margin: 0 0 0.8em 0; display: block;}
 
 
 
@@ -105,6 +103,11 @@ header {display: flex; justify-content: space-between; align-items: center; heig
 
     /* heroSection */
     .heroSection {padding: 5em 2em;}
+
+    /* footer */
+    .footer {padding: 5em;}
+    .fsec--title {font-size: 1.2em;}
+    .link--footer {font-size: .8em;}
 }
 
 @media(max-width: 426px) {
@@ -125,8 +128,8 @@ header {display: flex; justify-content: space-between; align-items: center; heig
 
     /* cardContainer */
     .card {font-size: .8em;}
-    .contain-img {width: 5em;}
-    .colorCh {font-size: .6em; width: 4.5rem;}
+    .contain-img {width: 5em; height: 5em;}
+    .colorCh {font-size: .5em; width: 5rem;}
 
     /* about */
     .about {
@@ -134,7 +137,18 @@ header {display: flex; justify-content: space-between; align-items: center; heig
     }
     .abSec {gap: 1em;}
 
-
+    
+    /* order */
+    .order {padding: 6em 3em;}
+    .link--order {font-size: .8em;}
+    
+    /* footer */
+    .footer {
+        flex-direction: column; gap: 2em;
+    }
+    .footer .link {display: inline; margin: 0 1.5em 0 0;}
+    .fsec--title {margin: 0 0 .5em 0;}
+    
 }
 
 @media(max-width: 375px) {
